@@ -1,0 +1,76 @@
+.container {
+  background-color: rgb(49, 49, 49);
+  // width: 100%;
+  height: 100vh;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .advice-div {
+    min-width: 200px;
+    height: 350px;
+    background-color: rgb(90, 90, 90);
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // transition: all 5s ease;
+
+    .advice-number {
+      color: greenyellow;
+    }
+
+    .advice {
+      color: whitesmoke;
+      font-weight: 600;
+      font-size: 19px;
+    }
+
+    hr {
+      border-radius: 3px;
+    }
+
+    .hr-1 {
+      width: 70%;
+      color: greenyellow;
+      background-color: greenyellow;
+      height: 4px;
+    }
+    .hr-2 {
+      width: 50%;
+      color: greenyellow;
+      background-color: greenyellow;
+      height: 2px;
+    }
+    .hr-3 {
+      width: 30%;
+      color: greenyellow;
+      background-color: greenyellow;
+      height: 1px;
+    }
+
+    button {
+      background-color: lightseagreen;
+      border: none;
+      padding: 5px;
+      color: whitesmoke;
+      font-size: 19px;
+      cursor: pointer;
+      transition: all 1s ease;
+      &:hover {
+        background-color: hsl(84, 100%, 59%, 0.5);
+      }
+    }
+  }
+
+  .resize-advice {
+    width: 10px;
+    transition: all 1s ease;
+    overflow: hidden;
+    transform: rotateX(360deg);
+  }
+}
